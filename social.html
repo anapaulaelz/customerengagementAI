@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memento - Social</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/social.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="logo">Memento</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="bookshop.html">BookShop</a></li>
+        <li><a href="social.html" class="active">Social</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Profile -->
+  <section class="profile-section">
+    <div class="profile-header">
+      <img src="assets/img/perfil.jpeg" alt="Profile Picture" class="profile-pic">
+      <div class="profile-info">
+        <h2>Ana Paula Elizondo</h2>
+        <p>Book enthusiast. Sharing my reading journey and reflections. 📚✨</p>
+      </div>
+    </div>
+    <button id="create-post-button" class="btn-primary">Create Post</button>
+  </section>
+
+  <!-- Modal 1: Select Book -->
+  <div id="book-select-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal-book" class="close-button">&times;</span>
+      <h2>Select a Book</h2>
+      <div class="book-grid" id="book-grid">
+        <!-- Books dynamically loaded -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Select Post Type -->
+  <div id="type-select-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal-type" class="close-button">&times;</span>
+      <h2>Select a Post Type</h2>
+      <div class="type-grid" id="type-grid">
+        <!-- Post types dynamically loaded -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Preview Post -->
+  <div id="preview-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal-preview" class="close-button">&times;</span>
+      <h2>Preview your Post</h2>
+      <div id="preview-content"></div>
+      <div class="preview-buttons">
+        <button id="share-post" class="btn-primary">Share Post</button>
+        <button id="cancel-preview" class="btn-secondary">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feed -->
+  <section class="feed-section">
+    <h2 class="feed-title">Your Posts</h2>
+    <div class="post-feed" id="post-feed">
+      <!-- Posts dynamically inserted -->
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="assets/js/social.js"></script>
+
+</body>
+</html>

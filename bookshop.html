@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memento - BookShop</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/bookshop.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="logo">Memento</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="bookshop.html" class="active">BookShop</a></li>
+        <li><a href="social.html">Social</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-quote-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-quote-content">
+      <p>"Discover your next read."</p>
+    </div>
+  </section>
+
+  <main class="bookshop-main">
+
+    <!-- Recommended for You -->
+    <section class="recommended-section">
+      <h2>Recommended for You</h2>
+      <div class="recommended-grid">
+        <div class="book-card">
+          <img src="assets/img/book22.jpg" alt="Recommended Book 1">
+          <h3>Nexus</h3>
+          <p>Yuval Noah Harai</p>
+          <button class="btn-add">➕ Add to My Library</button>
+        </div>
+        <div class="book-card">
+          <img src="assets/img/book23.jpg" alt="Recommended Book 2">
+          <h3>A Little Life</h3>
+          <p>Hanya Yanagihara</p>
+          <button class="btn-add">➕ Add to My Library</button>
+        </div>
+        <div class="book-card">
+          <img src="assets/img/book28.jpg" alt="Recommended Book 3">
+          <h3>Queen of Shadows</h3>
+          <p>Sarah J. Maas</p>
+          <button class="btn-add">➕ Add to My Library</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search and Filters -->
+<section class="search-filter-section">
+    <input type="text" placeholder="Search books..." class="search-input">
+    <select class="genre-select">
+      <option value="">All Genres</option>
+      <option value="fantasy">Fantasy</option>
+      <option value="romance">Romance</option>
+      <option value="thriller">Thriller</option>
+      <option value="historical">Historical</option>
+      <option value="science-fiction">Science Fiction</option>
+      <option value="non-fiction">Non-Fiction</option>
+    </select>
+  </section>
+
+    <!-- All Books -->
+    <section class="all-books-section">
+      <h2>All Books</h2>
+      <div class="books-grid">
+        <!-- 1 Book Card -->
+        <div class="book-card" data-genre="fantasy">
+            <img src="assets/img/book1.jpg" alt="Book Title 1">
+            <h3>A Court of Thorns and Roses</h3>
+            <p>Sarah J. Maas</p>
+            <button class="btn-add">➕ Add to My Library</button>
+        </div>
+        <!-- 2 Book Card -->
+        <div class="book-card" data-genre="fantasy">
+            <img src="assets/img/book2.jpg" alt="Book Title 1">
+            <h3>Fourth Wing</h3>
+            <p>Rebecca Yarros</p>
+            <button class="btn-add">➕ Add to My Library</button>
+        </div>
+        <!-- 3 Book Card -->
+        <div class="book-card" data-genre="fantasy">
+            <img src="assets/img/book3.jpg" alt="Book Title 1">
+            <h3>Throne of Glass</h3>
+            <p>Sarah J. Maas</p>
+            <button class="btn-add">➕ Add to My Library</button>
+        </div>
+          <!-- 4 Book Card -->
+          <div class="book-card" data-genre="science-fiction">
+            <img src="assets/img/book4.jpg" alt="Book Title 1">
+            <h3>Circe</h3>
+            <p>Madeline Miller</p>
+            <button class="btn-add">➕ Add to My Library</button>
+        </div>
+        <!-- 5 Book Card -->
+        <div class="book-card" data-genre="romance">
+            <img src="assets/img/book5.jpg" alt="Book Title 1">
+            <h3>Song of Achilles</h3>
+            <p>Madeline Miller</p>
+            <button class="btn-add">➕ Add to My Library</button>
+        </div>
+        <!-- 6 Book Card -->
+        <div class="book-card" data-genre="fantasy">
+            <img src="assets/img/book6.jpg" alt="Book Title 1">
+            <h3>Assassin's Blade</h3>
+            <p>Sarah J. Maas</p>
+            <button class="btn-add">➕ Add to My Library</button>
+        </div>
+        <!-- 7 Book Card -->
+        <div class="book-card" data-genre="fantasy">
+            <img src="assets/img/book7.jpg" alt="Book Title 1">
+            <h3>A Court of Frost and Starlight</h3>
+            <p>Sarah J. Maas</p>
+            <button class="btn-add">➕ Add to My Library</button>
+        </div>
+        <!-- 8 Book Card -->
+        <div class="book-card" data-genre="fantasy">
+            <img src="assets/img/book8.jpg" alt="Book Title 1">
+            <h3>Onyx Storm</h3>
+            <p>Rebecca Yarros</p>
+            <button class="btn-add">➕ Add to My Library</button>
+        </div>
+        <!-- 9 Book Card -->
+        <div class="book-card" data-genre="fantasy">
+            <img src="assets/img/book9.jpg" alt="Book Title 1">
+            <h3>The World of Ice and Fire</h3>
+            <p>George R. R. Martin</p>
+            <button class="btn-add">➕ Add to My Library</button>
+        </div>
+          <!-- 10 Book Card -->
+          <div class="book-card" data-genre="science-fiction">
+            <img src="assets/img/book10.jpg" alt="Book Title 1">
+            <h3>A Game of Thrones</h3>
+            <p>George R. R. Martin</p>
+            <button class="btn-add">➕ Add to My Library</button>
+        </div>
+        <!-- 11 Book Card -->
+        <div class="book-card" data-genre="Non-Fiction">
+            <img src="assets/img/book11.jpg" alt="Book Title 1">
+            <h3>The Lean Startup</h3>
+            <p>Eric Ries</p>
+            <button class="btn-add">➕ Add to My Library</button>
+        </div>
+        <!-- 12 Book Card -->
+        <div class="book-card" data-genre="Non-Fiction">
+            <img src="assets/img/book12.jpg" alt="Book Title 1">
+            <h3>Building a Storybrand 2.0</h3>
+            <p>Donald Miller</p>
+            <button class="btn-add">➕ Add to My Library</button>
+        </div>
+        <!-- 13 Book Card -->
+        <div class="book-card" data-genre="Non-Fiction">
+            <img src="assets/img/book13.jpg" alt="Book Title 1">
+            <h3>Como Agua para Chocolate</h3>
+            <p>Laura Esquivel</p>
+            <button class="btn-add">➕ Add to My Library</button>
+        </div>
+        <!-- 14 Book Card -->
+        <div class="book-card" data-genre="science-fiction">
+            <img src="assets/img/book14.jpg" alt="Book Title 1">
+            <h3>Pedro Paramo</h3>
+            <p>Juan Rulfo</p>
+            <button class="btn-add">➕ Add to My Library</button>
+        </div>
+        <!-- 15 Book Card -->
+        <div class="book-card" data-genre="thriller">
+            <img src="assets/img/book15.jpg" alt="Book Title 1">
+            <h3>El Llano en Llamas</h3>
+            <p>Juan Rulfo</p>
+            <button class="btn-add">➕ Add to My Library</button>
+        </div>
+          <!-- 16 Book Card -->
+          <div class="book-card" data-genre="Non-Fiction">
+            <img src="assets/img/book16.jpg" alt="Book Title 1">
+            <h3>Meditations</h3>
+            <p>Marcus Aurelius</p>
+            <button class="btn-add">➕ Add to My Library</button>
+        </div>
+        <!-- 18 Book Card -->
+        <div class="book-card" data-genre="Non-Fiction">
+            <img src="assets/img/book18.jpg" alt="Book Title 1">
+            <h3>The Little Book of Psycology</h3>
+            <p>Emmily Ralls</p>
+            <button class="btn-add">➕ Add to My Library</button>
+        </div>
+        <!-- 19 Book Card -->
+        <div class="book-card" data-genre="Non-Fiction">
+            <img src="assets/img/book19.jpg" alt="Book Title 1">
+            <h3>Laws of Human Nature</h3>
+            <p>Robert Greene</p>
+            <button class="btn-add">➕ Add to My Library</button>
+        </div>
+        <!-- 20 Book Card -->
+        <div class="book-card" data-genre="historical">
+            <img src="assets/img/book20.jpg" alt="Book Title 1">
+            <h3>Sapiens</h3>
+            <p>Yuval Noah Harai</p>
+            <button class="btn-add">➕ Add to My Library</button>
+        </div>
+        <!-- 29 Book Card -->
+        <div class="book-card" data-genre="Non-Fiction">
+            <img src="assets/img/book29.jpg" alt="Book Title 1">
+            <h3>Kingdom of Ash</h3>
+            <p>Sarah J. Maas</p>
+            <button class="btn-add">➕ Add to My Library</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/bookshop.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memento - Your Reading Journey</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">Memento</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="bookshop.html">BookShop</a></li>
+        <li><a href="social.html">Social</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="section-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Rediscover the Magic of Reading</h1>
+      <p>Record your ideas, reflect deeply, and share your journey with the world.</p>
+      <div class="hero-buttons">
+        <a href="dashboard.html" class="btn-primary">Explore Dashboard</a>
+        <button class="btn-secondary" id="open-recommendation">Get a Book Recommendation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature">
+      <h3>Track your reading habits</h3>
+      <p>Stay motivated and see your progress over time.</p>
+    </div>
+    <div class="feature">
+      <h3>Grow your thoughts</h3>
+      <p>Capture reflections and insights from every book.</p>
+    </div>
+    <div class="feature">
+      <h3>Share your journey</h3>
+      <p>Connect with others who love reading as much as you do.</p>
+    </div>
+  </section>
+
+  <!-- Modal for Book Recommendation -->
+  <div id="recommendation-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal" class="close-button">&times;</span>
+      <h2>Get a Book Recommendation</h2>
+      <p>Select your preferred genre:</p>
+      <select id="genre-select">
+        <option value="">Choose...</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="romance">Romance</option>
+        <option value="thriller">Thriller</option>
+        <option value="history">History</option>
+        <option value="psychology">Psychology</option>
+      </select>
+      <button id="recommend-button" class="record-button">Recommend Me a Book</button>
+      <div id="recommendation-result" class="recommendation-result"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/groq_api.js"></script>
+
+
+</body>
+</html>

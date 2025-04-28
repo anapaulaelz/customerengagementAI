@@ -1,0 +1,318 @@
+/* ---------------------------------------- */
+/*         MEMENTO - GLOBAL STYLE.CSS       */
+/* ---------------------------------------- */
+
+/* Variables */
+:root {
+  --background-light: #f8f5f0;
+  --text-dark: #3e2e20;
+  --text-accent: #5b3f2e;
+  --accent-light: #f8ead7;
+  --accent-medium: #8c6b4f;
+  --accent-dark: #7b5f47;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: "Georgia", serif;
+  background: var(--background-light);
+  color: var(--text-dark);
+  scroll-behavior: smooth;
+}
+
+/* ------------------------------- */
+/* Header */
+header {
+  background: rgba(62, 46, 32, 0.8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: var(--accent-light);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--accent-light);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f7d8a8;
+}
+
+/* ------------------------------- */
+/* Hero Section */
+.section-hero {
+  height: 100vh;
+  background-image: url('../img/hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px 20px;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(62, 46, 32, 0.6);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: var(--accent-light);
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: var(--accent-medium);
+  color: var(--accent-light);
+}
+
+.btn-primary:hover {
+  background: var(--accent-dark);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid var(--accent-light);
+  color: var(--accent-light);
+}
+
+.btn-secondary:hover {
+  background: var(--accent-light);
+  color: var(--text-dark);
+}
+
+/* ------------------------------- */
+/* Features Section */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding: 80px 40px;
+  background: var(--background-light);
+  text-align: center;
+}
+
+.feature h3 {
+  font-size: 1.8em;
+  color: var(--text-accent);
+  margin-bottom: 15px;
+}
+
+.feature p {
+  font-size: 1.1em;
+  color: var(--text-dark);
+}
+
+/* ------------------------------- */
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: var(--background-light);
+  margin: 8% auto;
+  padding: 40px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: var(--text-accent);
+}
+
+.modal-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#genre-select {
+  padding: 10px 12px;
+  font-size: 1em;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--text-dark);
+  background-color: #fff;
+  color: var(--text-dark);
+}
+
+#recommend-button {
+  padding: 12px 20px;
+  font-size: 1em;
+  margin-top: 10px;
+  background-color: var(--accent-medium);
+  color: var(--accent-light);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+#recommend-button:hover {
+  background-color: var(--accent-dark);
+}
+
+.recommendation-result {
+  margin-top: 30px;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--text-accent);
+}
+
+
+/* ------------------------------- */
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--text-dark);
+  color: var(--accent-light);
+  font-size: 0.9em;
+  margin-top: 40px;
+}
+
+/* ------------------------------- */
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2em;
+  }
+
+  .hero-content p {
+    font-size: 1em;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .features {
+    padding: 40px 20px;
+  }
+
+  .feature h3 {
+    font-size: 1.5em;
+  }
+
+  .feature p {
+    font-size: 1em;
+  }
+}
+
+/* Fade-in animation */
+@keyframes fadeInSmooth {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply fade-in when showing recommendation */
+.recommendation-result.fade-in {
+  animation: fadeInSmooth 0.8s ease forwards;
+}
+
+.recommendation-card {
+  background: var(--accent-light);
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.recommendation-card strong {
+  font-size: 1.0em;
+  color: var(--text-accent);
+  font-weight: bold;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.recommendation-card p {
+  font-size: 0.8em;
+  color: var(--text-dark);
+  font-weight: normal;
+  line-height: 1.6;
+}

@@ -1,0 +1,194 @@
+:root {
+    --background-light: #f8f5f0;
+    --text-dark: #3e2e20;
+    --text-accent: #5b3f2e;
+    --accent-light: #f8ead7;
+    --accent-medium: #8c6b4f;
+    --accent-dark: #7b5f47;
+  }
+  
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: "Georgia", serif;
+    background: var(--background-light);
+    color: var(--text-dark);
+  }
+  
+  /* Navbar */
+  header {
+    background: var(--accent-dark);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--accent-light);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: var(--accent-light);
+  }
+  
+  /* Profile */
+  .profile-section {
+    padding: 100px 20px 40px;
+    text-align: center;
+  }
+  
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+  
+  #create-post-button {
+    margin-top: 20px;
+  }
+  
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+  }
+  
+  .modal-content {
+    background: var(--background-light);
+    margin: 10% auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .close-button {
+    font-size: 2rem;
+    float: right;
+    cursor: pointer;
+  }
+  
+  /* Grid systems */
+  .book-grid, .type-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .book-card, .type-card {
+    background: var(--accent-light);
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .book-card:hover, .type-card:hover {
+    transform: translateY(-5px);
+    background: var(--accent-medium);
+    color: white;
+  }
+  
+  .book-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Feed */
+  .feed-section {
+    padding: 40px 20px;
+  }
+  
+  .feed-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .post-feed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .post-card {
+    background: var(--accent-light);
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .post-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .post-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .post-content {
+    padding: 15px;
+  }
+  
+  .like-button {
+    margin-top: 10px;
+    display: inline-block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  /* Preview modal special buttons */
+  .preview-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  

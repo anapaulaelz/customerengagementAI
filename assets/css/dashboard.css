@@ -1,0 +1,274 @@
+/* ------------------------------- */
+/* Navbar */
+header {
+    background: rgba(62, 46, 32, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--accent-light);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: var(--accent-light);
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #f7d8a8;
+  }
+  
+  /* ------------------------------- */
+  /* Hero Quote Section (NO CAMBIAR) */
+  .hero-quote-section {
+    position: relative;
+    height: 300px;
+    background-image: url('../img/1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 60px;
+    margin-bottom: 40px;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(62, 46, 32, 0.7);
+    z-index: 1;
+  }
+  
+  .hero-quote-content {
+    position: relative;
+    z-index: 2;
+    font-family: Georgia, serif;
+    font-size: 1.6em;
+    color: #ffffff;
+    max-width: 600px;
+  }
+  
+  /* ------------------------------- */
+  /* Main */
+  .dashboard-main {
+    padding: 40px 60px 20px;
+    background: var(--background-light);
+  }
+  
+  /* ------------------------------- */
+  /* Quick Stats */
+  .quick-stats {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .stat-card {
+    background: var(--accent-light);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .stat-value {
+    font-size: 2em;
+    color: var(--text-accent);
+    margin-bottom: 5px;
+  }
+  
+  .stat-label {
+    font-size: 1em;
+    color: var(--text-dark);
+  }
+  
+  .goal-card .goal-bar {
+    margin-top: 10px;
+    height: 8px;
+    background: #e0d6ca;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .goal-card .goal-bar-fill {
+    height: 8px;
+    background: var(--accent-dark);
+    border-radius: 5px;
+  }
+  
+  /* ------------------------------- */
+  /* Calendar + Garden Section */
+  .calendar-garden-section {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+  
+  .calendar-container, .garden-container {
+    background: var(--accent-light);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    flex: 1;
+  }
+  
+  /* Calendar Styles */
+  .calendar-container h2 {
+    font-size: 1.5em;
+    color: var(--text-accent);
+    margin-bottom: 20px;
+  }
+  
+  .calendar-header {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .calendar-days, .calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    gap: 3px;
+    font-size: 0.9em;
+  }
+  
+  .calendar-days div, .calendar-dates div {
+    padding: 4px;
+  }
+  
+  .calendar-dates div:hover {
+    background: var(--accent-dark);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* ------------------------------- */
+  /* Garden of Thoughts */
+  .garden-container h2 {
+    font-size: 1.5em;
+    color: var(--text-accent);
+    margin-bottom: 20px;
+  }
+  
+  #thought-input {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    border: 1px solid var(--text-dark);
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .thought-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .btn-primary, .btn-secondary {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .btn-primary {
+    background: var(--accent-medium);
+    color: var(--accent-light);
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background: var(--accent-dark);
+    color: var(--accent-light);
+  }
+  
+  .btn-secondary {
+    background: var(--accent-medium);
+    color: var(--accent-light);
+    border: none;
+  }
+  
+  .btn-secondary:hover {
+    background: var(--accent-dark);
+    color: var(--accent-light);
+  }
+  
+  .thought-result {
+    margin-top: 20px;
+    background: var(--background-light);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  }
+  
+  /* ------------------------------- */
+  /* My Reading Journey */
+  .library-section {
+    margin-bottom: 40px;
+  }
+  
+  .library-shelves {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .shelf {
+    flex: 1;
+    min-width: 250px;
+    background: var(--accent-light);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .shelf h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: var(--text-accent);
+  }
+  
+  .books-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+  }
+  
+  .books-grid img {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+  }
+  

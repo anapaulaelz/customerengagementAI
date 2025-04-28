@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memento - Dashboard</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="logo">Memento</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="bookshop.html">BookShop</a></li>
+        <li><a href="social.html">Social</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Quote with Background -->
+  <section class="hero-quote-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-quote-content">
+      <p>"The only way to learn is to read." — Jane Austen</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="dashboard-main">
+
+    <!-- Quick Stats -->
+    <section class="quick-stats">
+      <div class="stat-card">
+        <div class="stat-value">120</div>
+        <div class="stat-label">Minutes Read</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">3</div>
+        <div class="stat-label">Books Completed</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">8</div>
+        <div class="stat-label">Thoughts Recorded</div>
+      </div>
+      <div class="stat-card goal-card">
+        <div class="stat-value">40%</div>
+        <div class="stat-label">Goal Completed</div>
+        <div class="goal-bar">
+          <div class="goal-bar-fill" style="width: 40%;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calendar and Garden of Thoughts (side by side) -->
+    <section class="calendar-garden-section">
+      <div class="calendar-container">
+        <h2>Reading Calendar</h2>
+        <div class="calendar">
+          <div class="calendar-header">April 2025</div>
+          <div class="calendar-days">
+            <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+          </div>
+          <div class="calendar-dates">
+            <div></div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
+            <div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div>
+            <div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div>
+            <div>21</div><div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div>
+            <div>28</div><div>29</div><div>30</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="garden-container">
+        <h2>Garden of Thoughts</h2>
+
+        <div class="thought-input-container">
+          <textarea id="thought-input" placeholder="Write your reflection here..."></textarea>
+
+          <div class="thought-buttons">
+            <button id="polish-thought" class="btn-primary">✨ Polish my Thought</button>
+            <button id="expand-thought" class="btn-secondary">🌱 Expand my Idea</button>
+          </div>
+
+          <div id="thought-result" class="thought-result"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Reading Journey -->
+    <section class="library-section">
+      <h2>My Reading Journey</h2>
+
+      <div class="library-shelves">
+
+        <div class="shelf">
+          <h3>Want to Read</h3>
+          <div class="books-grid">
+            <img src="assets/img/book1.jpg" alt="Book 1">
+            <img src="assets/img/book2.jpg" alt="Book 2">
+          </div>
+        </div>
+
+        <div class="shelf">
+          <h3>Currently Reading</h3>
+          <div class="books-grid">
+            <img src="assets/img/book3.jpg" alt="Book 3">
+            <img src="assets/img/book4.jpg" alt="Book 4">
+          </div>
+        </div>
+
+        <div class="shelf">
+          <h3>Completed</h3>
+          <div class="books-grid">
+            <img src="assets/img/book5.jpg" alt="Book 5">
+            <img src="assets/img/book6.jpg" alt="Book 6">
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/thought_tools.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+
+</body>
+</html>
